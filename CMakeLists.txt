@@ -14,3 +14,5 @@ if(MSVC)
 endif()
 add_subdirectory ("NuCat")
 add_subdirectory("Dependencies/bit7z")
+# 移动NUCAT资源文件进主程序 Debug目录
+file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/Resource/" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/NuCat/)
