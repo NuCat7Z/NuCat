@@ -1,4 +1,4 @@
-#include "include/SHA1.h"
+#include "SHA1.h"
 
 SHA1::SHA1() :digest({ 0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476, 0xC3D2E1F0 }), transforms(0) {};
 
