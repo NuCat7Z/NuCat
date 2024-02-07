@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
-
+#include <format>
 class SHA1 {
 public:
 	SHA1();
