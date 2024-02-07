@@ -47,10 +47,11 @@ if(_WIN_PLATFORM_)
 elseif(_LINUX_PLATFORM_)
     add_executable (NuCat  "NuCat.cpp" ${SOURCES} ${PLATFORM_SOURCES})
 endif()
-if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -std=c++20")
-endif()
-set_property(TARGET NuCat PROPERTY CXX_STANDARD 20)
+
+set(CMAKE_CXX_STANDARD 11)  # 将 C++ 标准设置为 C++ 11
+set(CMAKE_CXX_STANDARD_REQUIRED ON)  # C++ 11 是强制要求，不会衰退至低版本
+set(CMAKE_CXX_EXTENSIONS OFF)  # 禁止使用编译器特有扩展
+
 target_link_libraries(NuCat PRIVATE bit7z )
 message("${PROJECT_SOURCE_DIR}/Dependencies/icu/lib/")
 message("___NuCat___")
