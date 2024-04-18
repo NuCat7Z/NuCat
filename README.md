@@ -1,4 +1,5 @@
-<div align="center"><img src="https://github.com/NuCat7Z/NUCAT/blob/main/Docs/icon-128.jpg?raw=true"> </div>
+# 警告
+已终止开发 由于win平台自带压缩可用性初具
 
 <div align="center"><h1>NUCAT</h1></div>
 <div align="center"><p>开源免费图形化压缩工具</p></div>
